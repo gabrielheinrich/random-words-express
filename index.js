@@ -14,6 +14,8 @@ app.use(logger("dev"))
 
 app.use(cors())
 
+app.use(bodyParser.json())
+
 // CONTROLLERS
 app.get("/hello", (request, response) => {
   response.send({response: "Hello"})
